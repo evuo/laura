@@ -1,0 +1,32 @@
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 40px auto 40px;
+    grid-template-areas: 
+        "h h h h h h h h h h h h"
+        "c c c c c c c c c c c c";
+}
+
+.header {
+    grid-column: 1 / -1;
+}
+
+.menu {}
+
+.content {
+    grid-column: 1 / -1;
+}
+
+.category {
+    display: grid;
+    grid-column: col 3 / span 2;
+    grid-row: row 2;
+    grid-gap: 10px;
+    grid
+}
+
+.footer {
+    grid-column: 1 / -1;
+}
